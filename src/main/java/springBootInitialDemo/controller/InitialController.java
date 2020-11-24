@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.*;
 import springBootInitialDemo.dto.UserResponseDto;
 import springBootInitialDemo.service.IUserService;
 
+
 @RestController
-@RequestMapping("/v1")
+//@RequestMapping("/v1")
+@RequestMapping("/")
 public class InitialController {
 
     private final IUserService userService;
@@ -18,10 +20,22 @@ public class InitialController {
         this.userService = userService;
     }
 
+    @GetMapping("/")
+    public String helloWorld() {
+        return "HELLO WORLD";
+    }
+    
+    @GetMapping("/{name}")
+    public String helloWorldWithName(@PathVariable String name) {
+    	
+    		return "Hello, " + name;
+    }
+    
     @GetMapping("/test")
     public String helloGradle() {
         return "Hello Gradle!";
     }
+    
 
     //@PutMapping(value ="", consumes = {"application/json"})
     @GetMapping("/user/{uuid}")
