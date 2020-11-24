@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "fd164d60-9a8a-4ad5-887b-539646490c97",
+		"name": "Ex_6-Collection",
+		"description": "Postman Collection with 3 environments Local, Dev and stage.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{IP}}:{{port}}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}"
+				},
+				"description": "Peticio a / per a que retorni HELLO WORLD usant variables de l'entorn local."
+			},
+			"response": []
+		},
+		{
+			"name": "{{IP}}:{{port}}/Pep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}/Pepito",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"Pepito"
+					]
+				},
+				"description": "Request to /<name> to receive Hello, <name> using environment variables from local environment."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
