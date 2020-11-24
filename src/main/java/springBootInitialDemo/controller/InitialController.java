@@ -25,6 +25,12 @@ public class InitialController {
         return "HELLO WORLD";
     }
     
+    @GetMapping("/{name}")
+    public String helloWorldWithName(@PathVariable String name) {
+    	
+    		return "Hello, " + name;
+    }
+    
     @GetMapping("/test")
     public String helloGradle() {
         return "Hello Gradle!";
