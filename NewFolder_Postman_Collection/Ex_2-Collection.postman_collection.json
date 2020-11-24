@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "b2bfae51-2bb5-4662-9e26-2ee85de1b2d6",
+		"name": "Ex_2-Collection",
+		"description": "Exercici 2 de la pàctica M11-Spring-intro.\n\nGuardar la petició Get a una nova collection.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://restcountries.eu/rest/v2/lang/es",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/lang/es",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"lang",
+						"es"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
